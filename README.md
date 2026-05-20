@@ -1,6 +1,5 @@
-# Distributed-5-Agent-NLP-Orchestration-System
-A production-grade, context-isolated Sequential-DAG Multi-Agent NLP pipeline built with Python, Streamlit, and the Groq Inference Engine. Features 5 distributed LLM agent nodes running heterogeneous hyperparameters to execute parallel linguistic translations, abstract semantic evaluation, and visual prompt synthesis from a single root payload.
-# Distributed 5-Agent NLP Orchestration System
+
+## Distributed 5-Agent NLP Orchestration System
 
 A production-grade, fully decoupled Multi-Agent Generative AI orchestration platform engineered with Python, Streamlit, and the Groq Inference Engine. The framework bypasses monolithic single-prompt bottlenecks by implementing a strict **Directed Acyclic Graph (DAG)** architecture across 5 isolated, specialized LLM node environments.
 
