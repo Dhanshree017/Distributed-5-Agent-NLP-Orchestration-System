@@ -8,15 +8,15 @@ A production-grade, fully decoupled Multi-Agent Generative AI orchestration plat
 
 ### 1. Ingestion Control & Asynchronous Telemetry
 The core interactive dashboard showing custom keyword ingestion and live status tracking as each distributed agent node finishes execution.
-![System Control Interface](interface.png)
+![System Control Interface](image/interface.png)
 
 ### 2. Multi-Lingual Generation & Title Synthesis
 The parallel fan-out stage displaying simultaneous English source generation, French mapping, Hindi Devanagari translation, and synthesized title headers for any user input.
-![Poetic and Translation Output](output_cup_of_tea_word.png)
+![Poetic and Translation Output](image/output_cup_of_tea_word.png)
 
 ### 3. Visual Prompt Concept Synthesis
 The downstream visual rendering node generating detailed watercolor artwork descriptions from the literary payload.
-![Artist Concept Output](output_cup_of_tea_word2.png)
+![Artist Concept Output](image/output_cup_of_tea_word2.png)
 
 ---
 
