@@ -1,7 +1,22 @@
-
-## Distributed 5-Agent NLP Orchestration System
+# Distributed 5-Agent NLP Orchestration System
 
 A production-grade, fully decoupled Multi-Agent Generative AI orchestration platform engineered with Python, Streamlit, and the Groq Inference Engine. The framework bypasses monolithic single-prompt bottlenecks by implementing a strict **Directed Acyclic Graph (DAG)** architecture across 5 isolated, specialized LLM node environments.
+
+---
+
+## 📸 System Interface & Execution Visuals
+
+### 1. Ingestion Control & Asynchronous Telemetry
+The core interactive dashboard showing keyword ingestion and live status tracking as each distributed agent node finishes execution.
+![System Control Interface](images/interface.png)
+
+### 2. Multi-Lingual Generation & Title Synthesis
+The parallel fan-out stage displaying simultaneous English source generation, French mapping, Hindi Devanagari translation, and synthesized title headers.
+![Poetic and Translation Output](images/output_cup_of_tea_word.png)
+
+### 3. Visual Prompt Concept Synthesis
+The downstream visual rendering node generating detailed watercolor artwork descriptions from the literary payload.
+![Artist Concept Output](images/output_cup_of_tea_word2.png)
 
 ---
 
@@ -25,19 +40,19 @@ To maximize processing throughput and minimize hallucination vectors, every micr
 
 * **PoetAgent (Root)**
   * *Responsibility:* High-variance creative text generation
-  * *Model:* `llama-3.1-8b-instant` | *Temperature:* `0.75` (Creative)
+  * *Model:* `openai/gpt-oss-120b` | *Temperature:* `0.75` (Creative)
 * **French Translator Node**
   * *Responsibility:* Literal, deterministic literary mapping
-  * *Model:* `llama-3.1-8b-instant` | *Temperature:* `0.25` (Deterministic)
+  * *Model:* `openai/gpt-oss-120b` | *Temperature:* `0.25` (Deterministic)
 * **Hindi Translator Node**
   * *Responsibility:* Lyrical Devanagari rhythm matching
-  * *Model:* `llama-3.1-8b-instant` | *Temperature:* `0.30` (Balanced)
+  * *Model:* `openai/gpt-oss-120b` | *Temperature:* `0.30` (Balanced)
 * **TitleAgent Node**
   * *Responsibility:* Concentrated semantic compression
-  * *Model:* `llama-3.1-8b-instant` | *Temperature:* `0.45` (Focused)
+  * *Model:* `openai/gpt-oss-120b` | *Temperature:* `0.45` (Focused)
 * **ArtistAgent Node**
   * *Responsibility:* Visual/Sensory prompt compilation
-  * *Model:* `llama-3.1-8b-instant` | *Temperature:* `0.65` (Imaginative)
+  * *Model:* `openai/gpt-oss-120b` | *Temperature:* `0.65` (Imaginative)
 
 ---
 
