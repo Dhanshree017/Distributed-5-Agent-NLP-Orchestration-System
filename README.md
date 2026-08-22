@@ -7,16 +7,16 @@ A production-grade, fully decoupled Multi-Agent Generative AI orchestration plat
 ## 📸 System Interface & Execution Visuals
 
 ### 1. Ingestion Control & Asynchronous Telemetry
-The core interactive dashboard showing keyword ingestion and live status tracking as each distributed agent node finishes execution.
-![System Control Interface](images/interface.png)
+The core interactive dashboard showing custom keyword ingestion and live status tracking as each distributed agent node finishes execution.
+![System Control Interface](interface.png)
 
 ### 2. Multi-Lingual Generation & Title Synthesis
-The parallel fan-out stage displaying simultaneous English source generation, French mapping, Hindi Devanagari translation, and synthesized title headers.
-![Poetic and Translation Output](images/output_cup_of_tea_word.png)
+The parallel fan-out stage displaying simultaneous English source generation, French mapping, Hindi Devanagari translation, and synthesized title headers for any user input.
+![Poetic and Translation Output](output_cup_of_tea_word.png)
 
 ### 3. Visual Prompt Concept Synthesis
 The downstream visual rendering node generating detailed watercolor artwork descriptions from the literary payload.
-![Artist Concept Output](images/output_cup_of_tea_word2.png)
+![Artist Concept Output](output_cup_of_tea_word2.png)
 
 ---
 
@@ -24,7 +24,7 @@ The downstream visual rendering node generating detailed watercolor artwork desc
 
 This architecture enforces absolute **Context Isolation** and **Data Encapsulation**. The system state progresses linearly down the execution graph where downstream nodes operate purely on localized upstream payloads, completely eliminating prompt-bleed:
 
-1. **User Ingestion Point:** Raw keywords act as the primary ignition parameters.
+1. **User Ingestion Point:** Raw user-provided keywords act as the primary ignition parameters.
 2. 🤖 **PoetAgent (Node 1 - Root):** Compiles a structured, high-variance 12-line core text payload.
 3. **Downstream Parallel Fan-Out:** The core text payload branches simultaneously into 4 independent sub-tracks:
     * 🌐 **French Translator (Node 2):** Rigid structural mapping into European French.
